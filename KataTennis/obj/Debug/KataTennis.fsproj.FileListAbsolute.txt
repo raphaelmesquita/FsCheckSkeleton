@@ -1,0 +1,7 @@
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\Debug\KataTennis.XML
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\Debug\KataTennis.dll
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\Debug\KataTennis.pdb
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\Debug\FSharp.Core.dll
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\Debug\FSharp.Core.xml
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\obj\Debug\KataTennis.dll
+c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\obj\Debug\KataTennis.pdb
