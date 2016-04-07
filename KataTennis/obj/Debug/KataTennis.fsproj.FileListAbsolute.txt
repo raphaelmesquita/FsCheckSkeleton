@@ -5,3 +5,10 @@ c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\D
 c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\bin\Debug\FSharp.Core.xml
 c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\obj\Debug\KataTennis.dll
 c:\users\rlima\documents\visual studio 2015\Projects\KataTennis\KataTennis\obj\Debug\KataTennis.pdb
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\bin\Debug\KataTennis.XML
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\bin\Debug\KataTennis.dll
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\bin\Debug\KataTennis.pdb
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\bin\Debug\FSharp.Core.dll
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\bin\Debug\FSharp.Core.xml
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\obj\Debug\KataTennis.dll
+C:\Users\Raphael\Documents\GitHubVisualStudio\FsCheckSkeleton\KataTennis\obj\Debug\KataTennis.pdb

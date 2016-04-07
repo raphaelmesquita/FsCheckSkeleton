@@ -139,6 +139,16 @@ Check all public static methods on the given type that have a testable return ty
 This includes let-bound functions in a module.
 </summary>
 </member>
+<member name="M:FsCheck.CommandExtensions.ToProperty``2(FsCheck.ICommandGenerator{``0,``1},FsCheck.Gen{System.Collections.Generic.IEnumerable{FsCheck.Command{``0,``1}}},Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IEnumerable{FsCheck.Command{``0,``1}},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{FsCheck.Command{``0,``1}}}})">
+<summary>
+Turn a specification into a property, allowing you to specify generator and shrinker.
+</summary>
+</member>
+<member name="M:FsCheck.CommandExtensions.ToProperty``2(FsCheck.ICommandGenerator{``0,``1})">
+<summary>
+Turn a specification into a property.
+</summary>
+</member>
 <member name="M:FsCheck.Command`2.RunModel(`1)">
 <summary>
 Executes the command on the model of the object.
@@ -316,6 +326,17 @@ What to print when new arguments args are generated in test n
 The size to use for the last test, when all the tests are passing. The size increases linearly between Start- and EndSize.
 </summary>
 </member>
+<member name="P:FsCheck.Configuration.VerboseThrowOnFailure">
+<summary>
+Like the Verbose configuration, only throws an exception with the error message if the test fails or is exhausted.
+Useful for use within other unit testing frameworks that usually adopt this methodolgy to signal failure.
+</summary>
+</member>
+<member name="P:FsCheck.Configuration.Verbose">
+<summary>
+The verbose configuration prints each generated argument.
+</summary>
+</member>
 <member name="P:FsCheck.Configuration.StartSize">
 <summary>
 The size to use for the first test.
@@ -334,6 +355,17 @@ If set, the seed to use to start testing. Allows reproduction of previous runs.
 <member name="P:FsCheck.Configuration.QuietOnSuccess">
 <summary>
 If set, suppresses the output from the test if the test is successful.
+</summary>
+</member>
+<member name="P:FsCheck.Configuration.QuickThrowOnFailure">
+<summary>
+Like the Quick configuration, only throws an exception with the error message if the test fails or is exhausted.
+Useful for use within other unit testing frameworks that usually adopt this methodolgy to signal failure.
+</summary>
+</member>
+<member name="P:FsCheck.Configuration.Quick">
+<summary>
+The quick configuration only prints a summary result at the end of the test.
 </summary>
 </member>
 <member name="P:FsCheck.Configuration.Name">
@@ -366,9 +398,14 @@ What to print when new arguments args are generated in test n
 The size to use for the last test, when all the tests are passing. The size increases linearly between Start- and EndSize.
 </summary>
 </member>
+<member name="P:FsCheck.Configuration.Default">
+<summary>
+The default configuration is the quick configuration.
+</summary>
+</member>
 <member name="T:FsCheck.Configuration">
 <summary>
-Configure the test run.
+Configure the test run with a quick configuration.
 </summary>
 </member>
 <member name="T:FsCheck.DontShrink`1">
@@ -1146,6 +1183,17 @@ Register the generators that are static members of the given type.
 Turn a specification into a property.
 </summary>
 </member>
+<member name="M:FsCheck.Command.toPropertyWith``2(FsCheck.ICommandGenerator{``0,``1},FsCheck.Gen{System.Collections.Generic.IEnumerable{FsCheck.Command{``0,``1}}},Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IEnumerable{FsCheck.Command{``0,``1}},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{FsCheck.Command{``0,``1}}}})">
+<summary>
+Turn a specification into a property, allowing you to specify generator and shrinker.
+</summary>
+</member>
+<member name="M:FsCheck.Command.GenerateCommands``2(FsCheck.ICommandGenerator{``0,``1})">
+<summary>
+Create a generator that generates a sequence of Command objects that
+satisfies the given specification.
+</summary>
+</member>
 <member name="M:FsCheck.Common.memoize``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1})">
 <summary>
 Memoize the given function.
@@ -1214,7 +1262,17 @@ of the object. Gen.connstant in particular is a bad idea - use Gen.fresh instead
 </member>
 <member name="M:FsCheck.Experimental.StateMachine.toProperty``2(FsCheck.Experimental.Machine{``0,``1})">
 <summary>
-Turn a specification into a property.
+Turn a machine specification into a property.
+</summary>
+</member>
+<member name="M:FsCheck.Experimental.StateMachine.forAll``2(FsCheck.Arbitrary{FsCheck.Experimental.MachineRun{``0,``1}})">
+<summary>
+Check all generated runs, i.e. create a property from an arbitrarily generated run.
+</summary>
+</member>
+<member name="M:FsCheck.Experimental.StateMachine.forOne``2(FsCheck.Experimental.MachineRun{``0,``1})">
+<summary>
+ Check one run, i.e. create a property from a single run.
 </summary>
 </member>
 <member name="M:FsCheck.Gen.variant``2(``0,FsCheck.Gen{``1})">
