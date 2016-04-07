@@ -5,6 +5,8 @@ open FsCheck.Xunit
 open Swensen.Unquote
 open Tennis
 
+//Não dá pra ir direto pro teste do test runner
+
 [<Property>]
 let ``Given game is over then it stays over`` (winner : Player) =
     let actual : Score = scoreWhenGame winner
